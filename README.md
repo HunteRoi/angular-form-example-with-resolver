@@ -28,7 +28,7 @@
 ## About The Project
 
 This project allows you to browse different URLs and see how the code renders from the different implementations.
-The accessible routes are :
+**The accessible routes are :**
 - /user
 - /user/:id
 - /user-two
@@ -71,4 +71,4 @@ git clone https://github.com/HunteRoi/angular-form-examples-with-resolver.git
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License. See [LICENSE](./LICENSE) for more information.
