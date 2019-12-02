@@ -1,0 +1,17 @@
+.button {
+  margin: 10px;
+}
+
+.form {
+  text-align: center;
+}
+
+pre {
+  display: block;
+  font-family: monospace;
+  white-space: pre;
+  padding: 1em;
+
+  background-color: #222;
+  color: #fff;
+}

@@ -1,12 +1,12 @@
 <form class="form" [formGroup]="userForm" (ngSubmit)="submit()">
-  <h1>User form</h1>
+  <h1>User Form Without NgModel</h1>
 
-  <input type="text" placeholder="prénom" formControlName="firstname" required [(ngModel)]="user.firstname"/>
-  <input type="text" placeholder="nom" formControlName="lastname" required [(ngModel)]="user.lastname"/>
+  <input type="text" placeholder="prénom" formControlName="firstname" required />
+  <input type="text" placeholder="nom" formControlName="lastname" required />
 
   <div formGroupName="address">
-    <input type="text" placeholder="rue" formControlName="street" [(ngModel)]="user.address.street"/>
-    <input type="text" placeholder="ville" formControlName="city" [(ngModel)]="user.address.city"/>
+    <input type="text" placeholder="rue" formControlName="street" />
+    <input type="text" placeholder="ville" formControlName="city" />
   </div>
 
   <button class="button" type="submit" [disabled]="userForm.invalid">Submit</button>

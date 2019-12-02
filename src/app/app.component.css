@@ -1,0 +1,18 @@
+.menu {
+  margin: 10px;
+}
+
+.menu a {
+  margin: 10px 0 10px 0;
+  display: block;
+}
+
+.active {
+  color: green;
+  text-decoration-color: green;;
+}
+
+a, a:active {
+  color: black;
+  text-decoration: underline;
+}

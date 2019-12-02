@@ -1,5 +1,5 @@
 {
-  "name": "test-form",
+  "name": "angular-form-examples-with-resolver",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

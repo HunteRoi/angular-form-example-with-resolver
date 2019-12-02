@@ -3,7 +3,7 @@ import { ActivatedRouteSnapshot, Resolve, Router, RouterStateSnapshot } from '@a
 import { Observable } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 
-import { User, UserService } from '../../data';
+import { User, UserService } from '../data';
 
 @Injectable({
   providedIn: 'root'
@@ -24,7 +24,6 @@ export class UserResolver implements Resolve<User> {
     // l'identifiant donné à travers la route /:id
     // un Observable<User>
     return this.userService.getById(route.params.id).pipe(
-
       // dans le cas d'une erreur (eg.: un Observable<never>)
       // catch l'erreur et renvoie vers l'URL donnée
       catchError(err => this.router.navigateByUrl('/'))

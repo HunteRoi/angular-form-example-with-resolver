@@ -1,27 +1,74 @@
-# TestForm
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/hunteroi/angular-form-examples-with-resolver">
+    <img src="https://www.supinfo.com/articles/resources/226924/7051/0.png" alt="Logo" width="240" height="120">
+  </a>
+  
+  <h3 align="center">Angular Form Examples With Resolver</h3>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.8.
+  <p align="center">
+    A complete working site with routing system explaining forms and route-resolvers in Angular!
+  </p>
+</p>
 
-## Development server
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- [Table of Contents](#table-of-contents)
+- [About The Project](#about-the-project)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [License](#license)
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-## Build
+This project allows you to browse different URLs and see how the code renders from the different implementations.
+The accessible routes are :
+- /user
+- /user/:id
+- /user-two
+- /user-two/:id
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+### Built With
+You will find herebelow the main frameworks and dependencies used by this solution:
+* [Angular 8](https://angular.io)
+  * Angular Core
+  * Angular Common
+  * Angular Forms
+  * Angular Router
+  * ...
+* [RxJs](https://rxjs-dev.firebaseapp.com/)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+<!-- GETTING STARTED -->
+## Getting Started
 
-## Further help
+To get a local copy up and running, follow these simple steps.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Prerequisites
+
+Please make sure you have a package manager installed on your device.
+
+### Installation
+ 
+1. Clone the repo
+```sh
+git clone https://github.com/HunteRoi/angular-form-examples-with-resolver.git
+```
+2. Open the folder with your favorite IDE
+3. Run `npm i` (or the default command of your favorite package manager in order to install the packages) in a prompt opened from the folder
+4. Serve the app with `ng serve -o` (the o flag means 'open' and will open your default browser with the application homepage)
+
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.

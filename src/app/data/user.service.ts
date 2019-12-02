@@ -18,36 +18,37 @@ export class UserService {
         firstname: 'John',
         lastname: 'Doe',
         address: {
-          street: 'some street'
+          street: 'some street',
+          city: null
         }
-      } as User,
+      },
       {
         id: 1,
         firstname: 'Jane',
         lastname: 'Doe',
         address: {
-          street: 'some street',
+          street: null,
           city: 'some city'
         }
-      } as User,
+      },
       {
         id: 2,
         firstname: 'Sarah',
         lastname: 'Connor',
         address: {
           street: 'Terminator has to find it',
-          city: 'America'
+          city: 'somewhere in America'
         }
-      } as User,
+      },
       {
         id: 3,
         firstname: 'Dude with no lastname',
-        lastname: '',
+        lastname: null,
         address: {
           street: 'will invalidate',
           city: 'the form'
         }
-      } as User
+      }
     ];
   }
 
@@ -55,9 +56,9 @@ export class UserService {
   // sur base de l'identifiant en paramètre
   getById(id: number): Observable<User> {
     // vérifie que l'identifiant n'est pas incorrect
-    if (id && (id < 0 || id > this.users.length)) {
+    if (id && (id < 0 || id >= this.users.length)) {
       // renvoie un Observable<never> dans le cas où il y a une erreur
-      return throwError(RangeError("Index out of bound"));
+      return throwError(RangeError('Index out of bound'));
     }
 
     // renvoie un observable avec l'User trouvé
