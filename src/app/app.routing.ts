@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { UserFormComponent } from './components/user-form/user-form.component';
 import { UserFormTwoComponent } from './components/user-form-two/user-form-two.component';
-import { UserResolver } from './components/user-resolver.service';
+import { UserResolver } from './user-resolver.service';
 
 const routes: Routes = [
   {
